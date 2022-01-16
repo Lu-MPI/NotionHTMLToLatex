@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="noml",
-    version="0.0.1",
+    name="no2ml",
+    version="0.0.2",
     author="Lu",
     author_email="lu2github@gmail.com",
     description="(Early Dev)Convert Notion Export HTML To Latex",
@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'noml = noml.main:main'
+            'no2ml = no2ml.main:main'
         ]
     },
 )
