@@ -9,8 +9,6 @@ from no2ml.to_dict import soup2dict
 def html2latex(html_text):
     """ notion html to latex """
 
-    print(html_text)
-
     soup = BeautifulSoup(html_text, "html.parser")
 
     dom_dict = soup2dict(soup)
