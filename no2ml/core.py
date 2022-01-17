@@ -3,6 +3,8 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 import json
 
+from no2ml.to_dict import soup2dict
+
 
 def html2latex(html_text):
     """ notion html to latex """
@@ -18,11 +20,6 @@ def html2latex(html_text):
     latex_text = dict2latex(dom_dict)
 
     return latex_text
-
-
-def soup2dict(soup):
-    """ TODO: parse soup to dict """
-    return {}
 
 
 def dict2latex(dom_dict):
