@@ -1,9 +1,9 @@
 """ core part """
 from pathlib import Path
 from bs4 import BeautifulSoup
-import json
 
 from no2ml.to_dict import soup2dict
+from no2ml.to_latex import dict2latex
 
 
 def html2latex(html_text):
@@ -13,16 +13,9 @@ def html2latex(html_text):
 
     dom_dict = soup2dict(soup)
 
-    print(json.dumps(dom_dict, ensure_ascii=False))
-
     latex_text = dict2latex(dom_dict)
 
     return latex_text
-
-
-def dict2latex(dom_dict):
-    """ TODO: parse dom dict to latex """
-    return ""
 
 
 # for test without build and install
