@@ -36,4 +36,4 @@ def read_text(file) -> str:
 
 def write_text(filepath, text):
     """ write latex text to file """
-    Path(filepath).write_text(text)
+    Path(filepath).write_text(text, encoding="UTF8")
